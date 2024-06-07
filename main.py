@@ -13,4 +13,11 @@ def visualizar_contatos():
             print(f"Nome: {nome}, Telefone: {telefone}")
     else:
         print("Nenhum contato encontrado.")
-      
+
+def remover_contato(nome):
+    if nome in contatos:
+        del contatos[nome]
+        print(f"Contato {nome} removido com sucesso.")
+    else:
+        print(f"Contato {nome} não encontrado.")
+
